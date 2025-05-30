@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown Styling</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="prose">
+          <!-- Headings -->
+          <h1>제목 1 (Heading 1)</h1>
+          <h2>제목 2 (Heading 2)</h2>
+          <h3>제목 3 (Heading 3)</h3>
+          <h4>제목 4 (Heading 4)</h4>
+          <!-- Regular paragraphs -->
+          <p>
+            이것은 일반적인 문단입니다. 마크다운에서 가장 기본적인 텍스트
+            요소입니다. 여러 줄의 텍스트를 포함할 수 있으며, 적절한 여백과 줄
+            간격을 가집니다.
+          </p>
+
+          <p>
+            또 다른 문단입니다. <strong>굵은 텍스트</strong>와
+            <em>기울어진 텍스트</em>를 포함할 수 있습니다. 그리고
+            <a href="#">링크</a>도 포함할 수 있습니다.
+          </p>
+
+          <!-- Links -->
+          <p>
+            다양한 링크 예시: <a href="https://example.com">일반 링크</a>,
+            <a href="mailto:test@example.com">이메일 링크</a>
+          </p>
+
+          <!-- Regular links only -->
+          <p>
+            외부 사이트 링크: <a href="https://example.com">Example Site</a>
+          </p>
+
+          <!-- Unordered lists -->
+          <ul>
+            <li>순서 없는 목록 항목 1</li>
+            <li>
+              순서 없는 목록 항목 2
+              <ul>
+                <li>중첩된 목록 항목 1</li>
+                <li>중첩된 목록 항목 2</li>
+              </ul>
+            </li>
+            <li>순서 없는 목록 항목 3</li>
+          </ul>
+
+          <!-- Ordered lists -->
+          <ol>
+            <li>순서 있는 목록 항목 1</li>
+            <li>
+              순서 있는 목록 항목 2
+              <ol>
+                <li>중첩된 순서 목록 1</li>
+                <li>중첩된 순서 목록 2</li>
+              </ol>
+            </li>
+            <li>순서 있는 목록 항목 3</li>
+          </ol>
+
+          <!-- Mixed nested lists -->
+          <ul>
+            <li>
+              혼합 목록 항목
+              <ol>
+                <li>순서 목록 내부</li>
+                <li>또 다른 순서 목록</li>
+              </ol>
+            </li>
+            <li>다른 항목</li>
+          </ul>
+
+          <!-- Blockquotes -->
+          <blockquote>
+            <p>
+              이것은 인용문입니다. 다른 사람의 말이나 중요한 내용을 강조할 때
+              사용합니다.
+            </p>
+            <p>인용문은 여러 문단을 포함할 수 있습니다.</p>
+          </blockquote>
+
+          <!-- Horizontal rule -->
+          <hr />
+
+          <!-- Code blocks -->
+          <h2>코드 예시</h2>
+
+          <p>
+            인라인 코드: <code>console.log('Hello World')</code>를 사용해서
+            콘솔에 출력할 수 있습니다.
+          </p>
+
+          <pre><code>// 코드 블록 예시
+function greetUser(name) {
+  console.log(`안녕하세요, ${name}님!`);
+  return `Welcome, ${name}`;
+}
+
+const userName = "개발자";
+const message = greetUser(userName);
+</code></pre>
+
+          <!-- Headers with code -->
+          <h2>헤더에 <code>코드</code> 포함 예시</h2>
+          <h3>API <code>endpoint</code> 설명</h3>
+
+          <!-- Tables -->
+          <h2>테이블 예시</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>직업</th>
+                <th>위치</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>김철수</td>
+                <td>30</td>
+                <td>개발자</td>
+                <td>서울</td>
+              </tr>
+              <tr>
+                <td>이영희</td>
+                <td>25</td>
+                <td>디자이너</td>
+                <td>부산</td>
+              </tr>
+              <tr>
+                <td>박민수</td>
+                <td>35</td>
+                <td>PM</td>
+                <td>대전</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Images -->
+          <h2>이미지 예시</h2>
+          <img src="https://picsum.photos/200/300" alt="샘플 이미지" />
+
+          <!-- Figures with captions -->
+          <figure>
+            <img src="https://picsum.photos/200" alt="피겨 이미지" />
+            <figcaption>이것은 캡션이 있는 이미지입니다.</figcaption>
+          </figure>
+
+          <!-- Video -->
+          <h2>비디오 예시</h2>
+          <video controls width="600">
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+            브라우저가 비디오를 지원하지 않습니다.
+          </video>
+
+          <!-- Complex nested content -->
+          <h2>복합 콘텐츠 예시</h2>
+          <p>목록과 코드가 혼합된 예시:</p>
+          <ol>
+            <li>
+              프로젝트 설정
+              <pre><code>npm init -y
+npm install express</code></pre>
+            </li>
+            <li>서버 파일 생성 <code>server.js</code></li>
+            <li>
+              서버 실행
+              <ul>
+                <li>개발 모드: <code>npm run dev</code></li>
+                <li>프로덕션 모드: <code>npm start</code></li>
+              </ul>
+            </li>
+          </ol>
+
+          <!-- Final paragraph -->
+          <p>
+            이상으로 마크다운에서 표현할 수 있는 모든 주요 요소들의 예시를
+            보여드렸습니다. 각 요소는 적절한 CSS 스타일이 적용되어 있으며,
+            디자이너분이 필요에 따라 수정하실 수 있습니다.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
