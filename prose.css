@@ -35,8 +35,6 @@
 /* .prose ol */
 .prose ol {
   counter-reset: list-counter;
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
 }
 
 /* .prose ol > li */
@@ -106,28 +104,23 @@
 /* .prose h1 */
 .prose h1 {
   font-weight: 800;
-  font-size: 2.25em;
-  margin-top: 0;
-  margin-bottom: 0.8888889em;
-  line-height: 1.1111111;
+  font-size: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.65em;
 }
 
 /* .prose h2 */
 .prose h2 {
   font-weight: 700;
   font-size: 1.5em;
-  margin-top: 2em;
-  margin-bottom: 1em;
-  line-height: 1.3333333;
+  margin-top: 0.5em;
 }
 
 /* .prose h3 */
 .prose h3 {
   font-weight: 600;
   font-size: 1.25em;
-  margin-top: 1.6em;
-  margin-bottom: 0.6em;
-  line-height: 1.6;
+  margin-top: 0.5em;
 }
 
 /* .prose h4 */
@@ -141,9 +134,9 @@
 /* .prose figure figcaption */
 .prose figure figcaption {
   color: #3d4043;
-  font-size: 0.875em;
+  font-size: 0.875em;+
   line-height: 1.4285714;
-  margin-top: 0.8571429em;
+  margin-top: 0.5em;
 }
 
 /* .prose code */
@@ -170,13 +163,13 @@
   overflow-x: auto;
   font-size: 0.875em;
   line-height: 1.7142857;
-  margin-top: 1.7142857em;
-  margin-bottom: 1.7142857em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   border-radius: 0.375rem;
-  padding-top: 0.8571429em;
-  padding-right: 1.1428571em;
-  padding-bottom: 0.8571429em;
-  padding-left: 1.1428571em;
+  padding-top: 0.8em;
+  padding-right: 1em;
+  padding-bottom: 0.8em;
+  padding-left: 1em;
 }
 
 /* .prose pre code */
@@ -224,9 +217,9 @@
 /* .prose thead th */
 .prose thead th {
   vertical-align: bottom;
-  padding-right: 0.5714286em;
-  padding-bottom: 0.5714286em;
-  padding-left: 0.5714286em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
 }
 
 /* .prose tbody tr */
@@ -252,7 +245,7 @@
 /* .prose p */
 .prose p {
   margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  margin-bottom: 1em;
 }
 
 /* .prose img */
@@ -294,8 +287,8 @@
 
 /* .prose ul */
 .prose ul {
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
 }
 
 /* .prose li */
@@ -395,9 +388,9 @@
 }
 
 /* 
-* 여기 아래 부분은 커스텀 스타일 이므로 놔두면 됩니다. 
-* 커스텀 스타일은 별도의 디자인 요구에 맞추기 위함입니다.
-* 예시) 파일 다운로드 카드, perplexity 링크, url 파비콘 등
+여기 아래 부분은 커스텀 스타일 이므로 놔두면 됩니다. 
+커스텀 스타일은 별도의 디자인 요구에 맞추기 위함입니다.
+예시) 파일 다운로드 카드, perplexity 링크, url 파비콘 등
 */
 a.custom-link {
   display: inline-flex;
